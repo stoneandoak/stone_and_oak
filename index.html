@@ -5,18 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css">
+
+    <!-- Style sheets -->
     <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
 
-
+    <!-- Jquery CDN -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="jquery.easings.min.js"></script>
 
-    <!-- <script type="text/javascript" src="scrolloverflow.min.js"></script> -->
-
-    <script type="text/javascript" src="jquery.fullPage.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css" />
     <title>Document</title>
 </head>
 
@@ -25,32 +25,93 @@
     <div class="nav">
         <button id="contact">Contact</button>
         <button id="home">Home</button>
-
         <button id="works">Works</button>
-        <br>
-        <center>
-            <button id="team">Team Page</button>
-        </center>
+        <button id="team">Team Page</button>
     </div>
 
 
 
     <div id="fullpage">
         <div class="section fp-auto-heigh">
-            <div class="slide">Contact</div>
-            <div class="slide active">Landing</div>
-            <div class="slide">Works</div>
+            <center>
+                <div class="slide">Contact Page</div>
+            </center>
+            <center>
+                <div class="slide active">Landing Page</div>
+            </center>
+            <center>
+                <div class="slide">Works Page</div>
+            </center>
+
         </div>
-        <div class="section fp-auto-heigh">
-            <div class="slide">
-                <center>Team</center>
+        <div class="section">
+            <h1 class="team">Meet The Team</h1>
+            <div class="image-container">
+                <div class="card">
+                    <div class="content">
+                        <div class="front wes">
+                        </div>
+                        <div class="back">
+                            <center>
+                                <h1 class="name">Wesley</h1>
+                            </center>
+                            <hr>
+
+                            <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, commodi earum delectus adipisci
+                                architecto nemo iure quos! Quae non quasi labore asperiores ipsa maxime molestias cupiditate
+                                necessitatibus temporibus, blanditiis fugit.</p>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content content2">
+                        <div class="front corey">
+
+                        </div>
+                        <div class="back">
+                            <center>
+                                <h1 class="name">Corey</h1>
+                            </center>
+                            <hr>
+
+                            <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, commodi earum delectus adipisci
+                                architecto nemo iure quos! Quae non quasi labore asperiores ipsa maxime molestias cupiditate
+                                necessitatibus temporibus, blanditiis fugit.</p>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content content3">
+                        <div class="front joey">
+                        </div>
+                        <div class="back">
+                            <center>
+                                <h1 class="name">Joey</h1>
+                            </center>
+                            <hr>
+
+                            <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, commodi earum delectus adipisci
+                                architecto nemo iure quos! Quae non quasi labore asperiores ipsa maxime molestias cupiditate
+                                necessitatibus temporibus, blanditiis fugit.</p>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
     </div>
 
 
-    <script type="text/javascript" src="full.js"></script>
+
 </body>
+
+<!-- fullpage.js scripts -->
+<script src="fullpage js/jquery.easings.min.js"></script>
+<script type="text/javascript" src="fullpage js/scrolloverflow.min.js"></script>
+<script type="text/javascript" src="fullpage js/jquery.fullPage.js"></script>
+<script type="text/javascript" src="fullpage js/full.js"></script>
 
 </html>

@@ -13,7 +13,7 @@ body {
 
 .nav {
   bottom: 20px;
-  left: 46%;
+  left: 41%;
   position: fixed;
   z-index: 999;
   font-size: 3em;
@@ -24,4 +24,5 @@ button {
 
 .section {
   padding: 0;
+  position: relative;
 }
