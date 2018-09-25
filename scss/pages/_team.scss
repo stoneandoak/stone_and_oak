@@ -1,0 +1,28 @@
+.team {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  column-gap: 40px;
+
+  .team-box {
+    height: 170px;
+    width: 100%;
+    border: white 2px solid;
+    display: flex;
+    flex-direction: row;
+
+    .img-div {
+      height: auto;
+      width: 40%;
+      border: yellow 1px solid;
+      margin: 10px;
+    }
+
+    .about-div {
+      height: auto;
+      width: 60%;
+      border: yellow 1px solid;
+      margin: 10px;
+    }
+  }
+}
