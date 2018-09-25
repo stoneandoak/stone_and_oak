@@ -1,3 +1,8 @@
+.team-section {
+  position: relative;
+  overflow: scroll;
+}
+
 .team {
   display: flex;
   flex-direction: column;
@@ -23,6 +28,8 @@
       width: 60%;
       border: yellow 1px solid;
       margin: 10px;
+      padding: 7px;
+      overflow: scroll;
     }
   }
 }
