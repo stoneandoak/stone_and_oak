@@ -1,35 +1,31 @@
-.team-section {
-  position: relative;
-  overflow: scroll;
-}
-
 .team {
+  padding: 15px;
   display: flex;
   flex-direction: column;
-  margin: 10px;
-  column-gap: 40px;
 
   .team-box {
-    height: 130px;
-    width: 100%;
-    border: white 2px solid;
+    transform: scale(0.95);
     display: flex;
     flex-direction: row;
 
     .img-div {
-      height: auto;
-      width: 40%;
-      border: yellow 1px solid;
-      margin: 10px;
-    }
+      width: 37%;
 
+      .example-img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
     .about-div {
-      height: auto;
-      width: 60%;
-      border: yellow 1px solid;
-      margin: 10px;
-      padding: 7px;
+      height: 170px;
       overflow: scroll;
+      margin-left: 15px;
+      width: 60%;
+      text-align: center;
+
+      .about-text {
+        text-align: left;
+      }
     }
   }
 }
