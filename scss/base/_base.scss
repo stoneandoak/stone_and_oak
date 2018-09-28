@@ -23,38 +23,33 @@ h6 {
 
 .heading-text {
   font-family: $main-font;
-  letter-spacing: 1.05em;
+  letter-spacing: 1.1em;
+  margin-bottom: 50px;
 }
 
-.nav {
-  width: 100%;
-  position: absolute;
-  bottom: 10px;
-  z-index: 99;
+.btn {
+  &:link,
+  &:visited {
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: $main-font;
+    padding: 7px;
+    margin: 5px;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all 0.2s;
+    position: relative;
+    background-color: rgb(252, 248, 248);
+    border-radius: 10px;
+  }
 
-  .btn {
-    &:link,
-    &:visited {
-      color: black;
-      text-transform: uppercase;
-      text-decoration: none;
-      font-family: $main-font;
-      padding: 7px;
-      margin: 5px;
-      display: inline-block;
-      border-radius: 10rem;
-      transition: all 0.2s;
-      position: relative;
-      background-color: rgb(252, 248, 248);
-      border-radius: 10px;
-    }
+  &:hover {
+    transform: translateY(-0.3em);
+  }
 
-    &:hover {
-      transform: translateY(-0.3em);
-    }
-    &:active {
-      transform: translateY(-0.1em);
-    }
+  &:active {
+    transform: translateY(-0.1em);
   }
 }
 
@@ -67,40 +62,25 @@ h6 {
   padding: 0;
 }
 
-#toggle {
-  width: 28px;
-  height: 30px;
-  z-index: 999;
-  position: absolute;
-  bottom: 1%;
-  right: 1%;
-}
-
-#toggle div {
-  // width: 100%;
-  height: 5px;
-  background: white;
-  margin: 4px auto;
-  transition: all 0.3s;
-  backface-visibility: hidden;
-}
-
-#toggle.on .one {
-  transform: rotate(45deg) translate(5px, 5px);
-}
-
-#toggle.on .two {
-  opacity: 0;
-}
-
-#toggle.on .three {
-  transform: rotate(-45deg) translate(7px, -8px);
-}
-
-#menu {
+.nav-menu {
+  position: fixed;
+  bottom: 0;
   width: 100%;
-  display: none;
-  color: white;
-  text-align: center;
-  margin: auto;
+  height: 75px;
+  background-color: black;
+  .nav-menu-items {
+    text-align: center;
+    .btn {
+      &:not(:first-child) {
+        margin-left: 20px;
+      }
+
+      margin-top: 20px;
+      box-shadow: 0px 0px 30px rgba(253, 253, 253, 0.877);
+    }
+    &:hover &__btn:not(:hover) {
+      // transform: scale(0.93);
+      filter: blur(2px);
+    }
+  }
 }

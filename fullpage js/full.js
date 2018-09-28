@@ -18,15 +18,6 @@ $(document).ready(function() {
   $(document).on("click", "#team", function() {
     $.fn.fullpage.moveTo("page2", 0);
   });
-  $(document).on("click", "#corey", function() {
-    $.fn.fullpage.moveTo("page2", 1);
-  });
-  $(document).on("click", "#wesley", function() {
-    $.fn.fullpage.moveTo("page2", 2);
-  });
-  $(document).on("click", "#joey", function() {
-    $.fn.fullpage.moveTo("page2", 3);
-  });
 });
 
 // new fullpage("#fullpage", {

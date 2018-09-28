@@ -39,11 +39,11 @@
                     <h1 class="heading-text">CONTACT</h1>
                 </div>
             </center>
-            <center>
-                <div class="slide active">
-                    <h1 class="heading-text">LANDING</h1>
-                </div>
-            </center>
+
+            <div class="slide active home">
+                <h1 class="heading-text">HOME</h1>
+            </div>
+
             <center>
                 <div class="slide">
                     <h1 class="heading-text">PORTFOLIO</h1>
@@ -57,16 +57,62 @@
                 <center>
                     <h1 class="heading-text">THE TEAM</h1>
                 </center>
-                <div class="space-holder"></div>
-                <div class="team-nav-links">
 
-                    <a href="#" class="btn-team-nav" id="corey">Corey</a>
-                    <a href="#" class="btn-team-nav" id="wesley">Wesley</a>
-                    <a href="#" class="btn-team-nav" id="joey">Joey</a>
+
+
+
+                <!-- </div> -->
+                <div class="image-container">
+                    <div class="card">
+                        <div class="content flip-corey">
+                            <div class="front">
+                                <img src="images/exampleimage.jpg" alt="">
+                                <a href="#" class="flip-btn corey-btn" onClick="flipCorey()">Corey</a>
+                            </div>
+                            <div class="back">
+                                <div class="about-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid fuga numquam distinctio
+                                    non, perferendis nulla eaque corporis commodi voluptatibus maiores odit illo repudiandae
+                                    alias molestias, unde rerum? Nihil, reprehenderit quo.
+                                </div>
+                                <div class="back-arrow" onClick="flipCorey()">&larr;</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="content flip-wes">
+                            <div class="front">
+                                <img src="images/exampleimage.jpg" alt="">
+                                <a href="#" class="flip-btn wes-btn" onClick="flipWes()">Wesley</a>
+                            </div>
+                            <div class="back">
+                                <div class="about-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid fuga numquam distinctio
+                                    non, perferendis nulla eaque corporis commodi voluptatibus maiores odit illo repudiandae
+                                    alias molestias, unde rerum? Nihil, reprehenderit quo.
+                                </div>
+                                <div class="back-arrow" onClick="flipWes()">&larr;</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="content flip-joey">
+                            <div class="front">
+                                <img src="images/exampleimage.jpg" alt="">
+                                <a href="#" class="flip-btn joey-btn" onClick="flipJoey()">Joey</a>
+                            </div>
+                            <div class="back">
+                                <div class="about-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid fuga numquam distinctio
+                                    non, perferendis nulla eaque corporis commodi voluptatibus maiores odit illo repudiandae
+                                    alias molestias, unde rerum? Nihil, reprehenderit quo.
+                                </div>
+                                <div class="back-arrow" onClick="flipJoey()">&larr;</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
+
             </div>
-            <div class="slide">
+            <!-- <div class="slide">
                 <center>
                     <h1 class="heading-text">Corey</h1>
                 </center>
@@ -80,19 +126,31 @@
                 <center>
                     <h1 class="heading-text">Joey</h1>
                 </center>
-            </div>
+            </div> -->
 
 
         </div>
 
     </div>
 
+    <footer class="nav-menu">
+        <div class="nav-menu-items">
+            <a href="#" class="btn nav-menu-items__btn" id="team">Team</a>
+            <a href="#" class="btn nav-menu-items__btn" id="contact">Contact</a>
+            <a href="#" class="btn nav-menu-items__btn" id="home">Home</a>
+            <a href="#" class="btn nav-menu-items__btn" id="works">Works</a>
+        </div>
+    </footer>
 
-    <div id="toggle">
-        <div class="one"></div>
-        <div class="two"></div>
-        <div class="three"></div>
+
+    <!-- <div class="toggle-container">
+        <div id="toggle">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+        </div>
     </div>
+
 
 
 
@@ -101,7 +159,7 @@
         <a href="#" class="btn" id="contact">Contact</a>
         <a href="#" class="btn" id="home">Home</a>
         <a href="#" class="btn" id="works">Works</a>
-    </div>
+    </div> -->
 
 
 
