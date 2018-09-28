@@ -87,6 +87,7 @@
     text-transform: uppercase;
     font-size: 1.3em;
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
     transition: all 0.3s;
 
     &:hover {
