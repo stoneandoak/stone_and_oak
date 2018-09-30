@@ -24,13 +24,13 @@ h6 {
 .heading-text {
   font-family: $main-font;
   letter-spacing: 1.1em;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .btn {
   &:link,
   &:visited {
-    color: black;
+    color: rgb(250, 248, 248);
     text-transform: uppercase;
     text-decoration: none;
     font-family: $main-font;
@@ -40,12 +40,14 @@ h6 {
     border-radius: 10rem;
     transition: all 0.2s;
     position: relative;
-    background-color: rgb(252, 248, 248);
-    border-radius: 10px;
+    background-color: rgb(37, 35, 35);
+    border-radius: 27px;
   }
 
   &:hover {
     transform: translateY(-0.3em);
+    background-color: rgb(250, 248, 248);
+    color: rgb(37, 35, 35);
   }
 
   &:active {
@@ -71,8 +73,10 @@ h6 {
   .nav-menu-items {
     text-align: center;
     .btn {
+      word-spacing: 3px;
+      padding: 5px;
       &:not(:first-child) {
-        margin-left: 20px;
+        margin-left: 8px;
       }
 
       margin-top: 20px;
@@ -82,5 +86,11 @@ h6 {
       // transform: scale(0.93);
       filter: blur(2px);
     }
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .nav-menu-items {
+    transform: scale(0.85);
   }
 }
