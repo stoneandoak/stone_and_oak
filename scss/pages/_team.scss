@@ -1,7 +1,7 @@
 .team-slide {
   .image-container {
     height: 88vh;
-    overflow: scroll;
+    overflow: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -12,7 +12,7 @@
       margin: 50px;
       width: 350px;
       height: 500px;
-      perspective: 500px;
+      perspective: 1500px;
     }
 
     .content {
@@ -43,20 +43,23 @@
       line-height: 1.5em;
     }
 
-    .front-corey {
-      background-image: url(".././images/corey.jpg");
+    .front {
       background-size: cover;
       background-position: center;
+      background-blend-mode: color;
+    }
+
+    .front-corey {
+      background-image: linear-gradient(to right bottom, darkgrey, grey),
+        url(".././images/corey.jpg");
     }
     .front-wes {
-      background-image: url(".././images/wesjace.jpg");
-      background-size: cover;
-      background-position: center;
+      background-image: linear-gradient(to right bottom, darkgrey, grey),
+        url(".././images/wesjace.jpg");
     }
     .front-joey {
-      background-image: url(".././images/joey.jpg");
-      background-size: cover;
-      background-position: center;
+      background-image: linear-gradient(to right bottom, darkgrey, grey),
+        url(".././images/joey.jpg");
     }
 
     .back {
@@ -72,7 +75,7 @@
       .connect-icons {
         position: absolute;
         bottom: 2%;
-        right: 6%;
+        right: 15%;
         font-size: 1.7em;
         word-spacing: 20px;
         a {
@@ -156,6 +159,7 @@
       transform: translateY(0);
     }
   }
+
   .corey-btn,
   .wes-btn,
   .joey-btn {
