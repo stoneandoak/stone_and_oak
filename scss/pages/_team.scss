@@ -1,7 +1,7 @@
 .team-slide {
   .image-container {
-    height: 88vh;
-    overflow: auto;
+    height: 90vh;
+    overflow: scroll;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -9,7 +9,7 @@
 
     .card {
       position: relative;
-      margin: 50px;
+      // margin: 50px;
       width: 350px;
       height: 500px;
       perspective: 1500px;
@@ -178,6 +178,6 @@
 
 @media only screen and (max-width: 414px) {
   .card {
-    transform: scale(0.8);
+    transform: scale(0.7);
   }
 }
