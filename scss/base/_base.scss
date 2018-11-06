@@ -64,23 +64,23 @@ h6 {
   padding: 0;
 }
 
-.nav-menu {
+.footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  .toggle-nav {
+  .open {
     position: relative;
-    text-decoration: none;
-    color: white;
     font-size: 2.5em;
+    cursor: pointer;
   }
 
-  .nav-menu-item {
+  .nav-menu {
     width: 100%;
     text-align: center;
     display: none;
     .fa-times {
       font-size: 2.5em;
+      cursor: pointer;
     }
     .btn {
       word-spacing: 3px;
@@ -96,7 +96,7 @@ h6 {
 }
 
 @media only screen and (max-width: 415px) {
-  .nav-menu-items {
-    transform: scale(0.85);
+  .nav-menu {
+    font-size: 0.8em;
   }
 }
