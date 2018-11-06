@@ -12,3 +12,17 @@ function flipWes() {
 function flipJoey() {
   $(".flip-joey").toggleClass("flip");
 }
+
+$(document).ready(function() {
+  $(".fa-bars").click(function() {
+    $(".nav-menu-item").slideToggle("slow");
+    $(".open").fadeToggle("slow");
+  });
+});
+
+$(document).ready(function() {
+  $(".fa-times").click(function() {
+    $(".nav-menu-item").slideToggle("slow");
+    $(".open").fadeToggle("slow");
+  });
+});
