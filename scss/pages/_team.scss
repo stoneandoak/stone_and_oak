@@ -133,6 +133,10 @@
       }
     }
   }
+
+  .image-container::-webkit-scrollbar {
+    display: none;
+  }
   .flip-btn {
     text-decoration: none;
     color: white;
