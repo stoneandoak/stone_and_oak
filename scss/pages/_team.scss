@@ -1,7 +1,11 @@
 .team-slide {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
   .image-container {
-    height: 90vh;
-    overflow: scroll;
+    width: 100%;
+    height: 95vh;
+    overflow-y: scroll;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
